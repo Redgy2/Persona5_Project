@@ -1,0 +1,891 @@
+/*-----------Écran pour téléphone------------*/
+@media screen and (max-width: 600px){
+body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+
+/*-------
+Configuration du menu de navigation pour téléphone
+*/
+
+.logo{
+    display: none;
+}
+                
+h1{
+    text-align: center; 
+    font-size: 190%;
+    text-shadow: 5px 5px black;      
+}
+
+#google_translate_element{
+    padding-top: 25px;
+    float: right;
+}
+                
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+                
+#menuNav{
+    width:100%; 
+    margin-top: -20px;
+    position: fixed;
+    background-color: black;
+}
+
+.menu{
+    float: left;
+    width: 40px;
+    height: 15px;
+    margin: 12px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+                
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+/*
+*Menu-Hamburger
+*/
+
+.change .bar{
+background-color:#FFD625;
+}
+
+.change #bar1{
+transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2{
+opacity: 0;
+}
+
+.change{
+display: block;
+}
+
+
+.change-bg{
+width: 550px;
+height: 540px;
+}
+
+.change #bar3{
+transform: translateY(-6px) rotateZ(45deg);
+}
+
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+
+#navArea ul li a{
+    text-decoration: none;
+    padding:10px 15px;
+    display: block;
+    color:white;
+    font-size: 19px;
+}
+
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+    
+#navArea ul li:hover > ul{
+    display: block;
+}
+    
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+}
+
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+        
+a{
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Background blanc de certaines lettres
+*/
+    
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Background rouge de certaines lettres
+*/
+
+span.redB{
+    background-color: red;
+    text-shadow: 0px 0px black;
+}
+  
+/*-------
+Espace entre lettres
+*/
+
+span.espace{
+    opacity: 0;
+}
+
+/*-------
+1er paragraphe
+*/
+
+.enTete{
+    padding-top: 220px;
+}
+
+h2{
+    font-size: 37px;
+    text-align: center;
+}
+    
+.paragraphe{
+    font-size: 21px;
+    color: white;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+2eme paragraphe
+*/
+
+h3{
+    font-size: 37px;
+    text-align: center;
+}
+
+.palaceInfo{
+    font-size: 21px;
+    color: white;
+    -webkit-text-stroke: 0px black; 
+}
+   
+/*-------
+Paramètres boite d'information des palaces et images
+*/
+
+.titre{
+    text-align: center;
+    font-size: 34px;
+}
+    
+.lesPalaces{
+    color: white;
+    font-size: 21px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 220px 220px;
+    justify-content: center;
+}
+ 
+.info{
+    background-color: red;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+
+.info2{
+    background-color: black;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+
+.right{
+    width: 50%;
+}
+
+.Kamoshida{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 450px;
+}
+
+.Madarame{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 430px;
+    width: 450px;
+}
+
+.Kaneshiro{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 400px;
+    width: 450px;
+}
+
+.Futaba{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 400px;
+    width: 450px;
+}
+
+.Okumura{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 400px;
+     width: 450px;  
+}
+
+.Niijima{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 400px;
+    width: 450px;    
+}
+
+.Shido{
+    margin-left: auto;
+    margin-top: 10px;
+    height: 400px;
+    width: 450px;     
+ }
+
+ #demo{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: none;
+}
+
+}    
+    
+    
+
+/*---------Écran pour tablette----------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1200px){
+body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+
+/*-------
+Configuration du menu de navigation 
+*/
+    
+.logo{
+    display: none;
+}
+        
+h1{
+    text-align: center; 
+    font-size: 220%;
+    text-shadow: 5px 5px black;    
+}
+
+#google_translate_element{
+    padding-top: 25px;
+    float: right;
+}
+
+              
+#menuNav{
+    width:100%; 
+    margin-top: -35px;
+    position: fixed;
+    background-color: black;
+
+}
+
+.menu{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav li{
+    list-style: none;
+    
+}
+
+.nav li a:hover{
+    background-color: #28F5EF;
+}
+        
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+/*
+*Menu-Hamburger
+*/
+
+.change .bar{
+    background-color:#FFD625;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.change{
+    display: block;
+}
+
+
+.change-bg{
+    width: 550px;
+    height: 540px;
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+
+#navArea ul li a{
+    text-decoration: none;
+    padding:15px 20px;
+    display: block;
+    color:white;
+    font-size: 22px;
+}
+
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+
+#navArea ul li:hover > ul{
+    display: block;
+}
+
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+}
+
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+    
+a{
+    font-size: 20px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Background blanc de certaines lettres
+*/
+
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Background rouge de certaines lettres
+*/
+
+span.redB{
+    background-color: red;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Espace entre certaines lettres
+*/
+
+span.espace{
+    opacity: 0;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.enTete{
+    padding-top: 220px;
+}
+/*-------
+1er paragraphe
+*/
+
+.paragraphe{
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+2eme paragraphe
+*/
+
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.palaceInfo{
+    font-size: 23px;
+    color: white;
+    -webkit-text-stroke: 0px black; 
+}
+
+/*-------
+Paramètres boites d'information des palaces et images
+*/
+
+.titre{
+    text-align: center;
+    font-size: 35px;
+}
+
+.lesPalaces{
+    color: white;
+    font-size: 23px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 230px 230px;
+    justify-content: center;
+}
+
+.info{
+    background-color: red;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+
+.info2{
+    background-color: black;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+
+.right{
+    width: 50%;
+}
+
+.Kamoshida{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;
+}
+
+.Madarame{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 430px;
+    width: 190%;
+}
+
+.Kaneshiro{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;
+}
+
+.Futaba{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;
+}
+
+.Okumura{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;   
+}
+
+.Niijima{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;    
+}
+
+.Shido{
+    margin-left: auto;
+    margin-top: 20px;
+    height: 400px;
+    width: 190%;     
+}
+
+#demo{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: none;
+}
+
+}    
+
+
+/*-----------Écran pour pc-------------*/
+
+@media only screen and (min-width: 1200px){
+body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+    margin: 0;
+}
+    
+/*-------
+Configuration du menu de navigation 
+*/
+  
+.logo{
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+
+h1{
+    text-align: center; 
+    font-size: 400%;
+    text-shadow: 5px 5px black;  
+}
+
+#google_translate_element{
+    padding-top: 30px;
+    float: right;
+}
+
+     
+#menuNav{
+    margin-top: -20px;
+    width:100%;  
+    position: fixed;
+    background-color: black; 
+}
+
+.enTete{
+    padding-top: 230px;
+}
+
+
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+#navArea ul li a{
+    text-decoration: none;
+    padding:15px 20px;
+    display: block;
+    color:white;
+    font-size: 27px;
+}
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+
+#navArea ul li:hover > ul{
+    display: block;
+}
+
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+    }
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+    
+a{
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Background blanc de certaines lettres
+*/
+
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Background rouge de certaines lettres
+*/
+
+span.redB{
+    background-color: red;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Espace entre lettre
+*/
+
+span.espace{
+    opacity: 0;
+}
+
+/*-------
+1er paragraphe
+*/
+
+h2{
+    font-size: 43px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.paragraphe{
+    font-size: 23px;
+    color: white;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+2eme paragraphe
+*/
+
+h3{
+    font-size: 43px;
+    text-align: center;
+}
+
+.palaceInfo{
+    font-size: 23px;
+    color: white;
+    -webkit-text-stroke: 0px black; 
+}
+
+/*-------
+Paramètres boites d'information des palaces et images
+*/
+
+.titre{
+    text-align: center;
+    font-size: 36px;
+}
+
+.lesPalaces{
+    color: white;
+    font-size: 23px;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+}
+
+.firstPalace{
+    display: flex; 
+}
+
+.info{
+    background-color: red;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+.info2{
+    background-color: black;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    -webkit-text-stroke: 0px black; 
+}
+
+.right{
+    width: 40%;
+}
+
+.Kamoshida{
+    height: 400px;
+    width: 100%;
+}
+
+.Madarame{
+    height: 430px;
+    width: 100%;
+}
+
+.Kaneshiro{
+    height: 400px;
+    width: 100%;
+}
+
+.Futaba{
+    height: 400px;
+    width: 100%;
+}
+
+.Okumura{
+    height: 400px;
+    width: 100%;   
+}
+
+.Niijima{
+    height: 400px;
+    width: 100%;    
+}
+
+.Shido{
+    height: 400px;
+    width: 100%;     
+}
+
+#demo{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: none;
+}
+
+}    

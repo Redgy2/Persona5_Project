@@ -1,0 +1,855 @@
+
+/*-----------Écran pour téléphone------------*/
+@media screen and (max-width: 600px){
+    body {
+        background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        -webkit-text-stroke: 2px black;
+        color:white;
+    }
+        
+            
+    /*-------
+    Configuration du menu de navigation pour téléphone
+    */
+            
+    .logo{
+        display: none;
+    }
+                    
+    h1{
+        text-align: center; 
+        font-size: 190%;
+        text-shadow: 5px 5px black;      
+    }
+                    
+    header::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    #google_translate_element{
+        padding-top: 25px;
+        float: right;
+    }
+                    
+    #menuNav{
+        width:100%; 
+        margin-top: -20px;
+        position: fixed;
+        background-color: black;
+    }
+    
+    .menu{
+        float: left;
+        width: 40px;
+        height: 15px;
+        margin: 12px 0 20px 20px;
+        cursor: pointer;
+    }
+    
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+    
+                    
+    #navArea:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    
+    .nav{
+        padding: 0;
+        margin: 0 20px;
+        transition: 0.3s ease;
+        display: none;
+    }
+    
+    /*
+    *Menu-Hamburger
+    */
+    
+    .change .bar{
+    background-color:#FFD625;
+    }
+    
+    .change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2{
+    opacity: 0;
+    }
+    
+    .change{
+    display: block;
+    }
+    
+    
+    .change-bg{
+    width: 550px;
+    height: 540px;
+    }
+    
+    .change #bar3{
+    transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    #navArea ul{
+    list-style: none;
+    margin:0;
+    
+    }
+             
+    #navArea ul{
+        list-style: none;
+        margin:0;
+    }
+            
+    #navArea > ul > li{
+        float: left;
+        position: relative;
+    }
+            
+    #navArea ul li a{
+        text-decoration: none;
+        padding:10px 15px;
+        display: block;
+        color:white;
+        font-size: 19px;
+    }
+            
+    #navArea ul li:hover a{
+        background-color: #28F5EF;
+    }
+            
+    #navArea ul ul{
+        position:absolute;
+        padding:0;
+        min-width: 160px;
+        display: none;
+        top: 90%;
+        left: 0;
+    }
+                
+    #navArea ul li:hover > ul{
+        display: block;
+    }
+                
+    #navArea ul ul li:hover a{
+        background-color: #FF3522;
+    }
+            
+    #navArea ul ul li{
+        position: relative;
+    }
+
+    .essai:hover,
+    .essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+                    
+    a{
+        font-size: 25px;
+        -webkit-text-stroke: 2px black;
+    }
+            
+    /*-------
+    Background blanc de certaines lettres
+    */
+                
+    span.fi{
+        background-color: white;
+        text-shadow: 0px 0px black;
+    }
+    
+    /*-------
+    Espace entre certaines lettres
+    */
+    
+    span.espace{
+    opacity: 0;
+    }
+    
+        
+    /*-------
+    Format du texte dans le body
+    */
+        
+        
+    h2{
+        font-size: 37px;
+        text-align: center;
+        padding-top: 220px;
+    }
+        
+    .paragraphe{
+        font-size: 21px;
+        color: white;
+        -webkit-text-stroke: 0px black;
+    }
+        
+    h3{
+        font-size: 37px;
+        text-align: center;
+    }
+    
+    .imagu{
+        margin-left: 45%;
+    }
+    
+    .btn:hover{
+        background:#28F5EF;
+        cursor: pointer;
+    }
+    
+    /*-------
+    Couleur des cellules de la boîte information
+    */
+    
+    .info{
+        background-color: red;
+        border-radius: 10px;
+        border: solid black 2px;
+        text-align: center;
+        -webkit-text-stroke: 0px black; 
+    }
+    .info2{
+        background-color: black;
+        border-radius: 10px;
+        border: solid black 2px;
+        text-align: center;
+        -webkit-text-stroke: 0px black; 
+    }
+    
+    .left{
+        width: 100%;
+    }
+    
+    .phantom{
+        height: 385px;
+        margin: auto;
+        display: block;
+    }
+    
+    /*-------
+    Configuration boîte information
+    */
+    
+    .box{
+        color: white;
+        font-size: 22px;
+        display: grid;
+        width: 35%;
+        grid-template-columns: 220px 220px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .right{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    
+    /*-------
+    PERSONA
+    */
+    
+    .necronomicon{
+        margin: auto;
+        width: 385px;
+        display: block;
+    }
+    
+    /*-------
+    Vidéo d'introduction
+    */
+    
+    .navi{
+        width: 385px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #demo{
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        text-shadow: none;
+    }
+    
+    
+    }
+    
+    
+    
+    
+    /*---------Écran pour tablette----------------*/
+    @media screen and (min-width: 601px) and (max-width: 1200px){
+    body {
+        background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        -webkit-text-stroke: 2px black;
+        color:white;
+    }
+            
+    /*-------
+    Configuration du menu de navigation 
+    */
+        
+    .logo{
+        float: left;
+        width: 80px;
+        height: 80px;
+        display: none;
+    }
+            
+    h1{
+        text-align: center; 
+        font-size: 320%;
+        text-shadow: 5px 5px black;      
+    }
+
+    #google_translate_element{
+        padding-top: 25px;
+        float: right;
+    }
+                  
+    #menuNav{
+        width:100%; 
+        margin-top: -35px;
+        position: fixed;
+        background-color: black;
+    
+    }
+    
+    .menu{
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin: 20px 0 20px 20px;
+        cursor: pointer;
+    }
+    
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+    
+    .nav li{
+        list-style: none;
+        
+    }
+    
+    .nav li a:hover{
+        background-color: #28F5EF;
+    }
+            
+    #navArea:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    
+    .nav{
+        padding: 0;
+        margin: 0 20px;
+        transition: 0.3s ease;
+        display: none;
+    }
+    
+    /*
+    *Menu-Hamburger
+    */
+    
+    .change .bar{
+        background-color:#FFD625;
+    }
+    
+    .change #bar1{
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2{
+        opacity: 0;
+    }
+    
+    .change{
+        display: block;
+    }
+    
+    
+    .change-bg{
+        width: 550px;
+        height: 540px;
+    }
+    
+    .change #bar3{
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    #navArea ul{
+        list-style: none;
+        margin:0;
+    
+    }
+    
+        
+    #navArea > ul > li{
+        float: left;
+        position: relative;
+    }
+        
+      
+    #navArea ul li:hover a{
+        background-color: #28F5EF;
+    }
+        
+    #navArea ul ul{
+        position:absolute;
+        padding:0;
+        min-width: 160px;
+        display: none;
+        top: 90%;
+        left: 0;
+    }
+        
+    #navArea ul li:hover > ul{
+        display: block;
+    }
+        
+    #navArea ul ul li:hover a{
+        background-color: #FF3522;
+    }
+        
+    #navArea ul ul li{
+        position: relative;
+    }
+      
+    
+    #navArea ul li a{
+        text-decoration: none;
+        padding:15px 20px;
+        display: block;
+        color:white;
+        font-size: 22px;
+    }
+
+    .essai:hover,
+    .essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+      
+    a{
+        font-size: 20px;
+        -webkit-text-stroke: 2px black;
+    }
+        
+    /*-------
+    Background blanc de certaines lettres
+    */
+        
+    span.fi{
+        background-color: white;
+        text-shadow: 0px 0px black;
+    }
+    
+    /*-------
+    Espace entre certaines lettres
+    */
+    
+    span.espace{
+        opacity: 0;
+    }
+    
+        
+    /*-------
+    Format du texte dans le body
+    */
+        
+    h2{
+        font-size: 40px;
+        text-align: center;
+        padding-top: 250px;
+    }
+        
+    .paragraphe{
+        font-size: 22px;
+        color: white;
+        -webkit-text-stroke: 0px black;
+    }
+        
+    h3{
+        font-size: 34px;
+        text-align: center;
+    }
+    
+    .perso{
+        display:block;
+    }
+    
+        /*-------
+        Couleur des cellules de la boîte information
+        */
+    
+        .info{
+            background-color: red;
+            border-radius: 10px;
+            border: solid black 2px;
+            text-align: center;
+            -webkit-text-stroke: 0px black; 
+        }
+        .info2{
+            background-color: black;
+            border-radius: 10px;
+            border: solid black 2px;
+            text-align: center;
+            -webkit-text-stroke: 0px black; 
+        }
+        
+        .left{
+            width: 100%;
+        }
+        
+        .phantom{
+            height: 575px;
+            margin: auto;
+            display: block;
+        }
+    
+        .imagu{
+            margin-left: 45%;
+            cursor: pointer;
+        }
+    
+        .btn:hover{
+            background:#28F5EF;
+            cursor: pointer;
+        }
+    
+    
+        /*-------
+        Configuration boîte information
+        */
+        
+        .box{
+            color: white;
+            font-size: 22px;
+            display: grid;
+            width: 45%;
+            grid-template-columns: 220px 220px;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .right{
+            width: 100%;
+        }
+    
+    
+    /*-------
+    PERSONA
+    */
+    
+    .necronomicon{
+        margin: auto;
+        width: 580px;
+        display: block;
+    }
+    
+    /*-------
+    Vidéo d'introduction
+    */
+    
+    .navi{
+        width: 500px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #demo{
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        text-shadow: none;
+    }
+    
+    }   
+    
+    
+    /*-----------Écran pour pc-------------*/
+    
+    @media only screen and (min-width: 1200px){
+    body {
+        background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        -webkit-text-stroke: 2px black;
+        color:white;
+    }
+                    
+    /*-------
+    Configuration du menu de navigation 
+    */
+                    
+    .logo{
+        float: left;
+        width: 130px;
+        height: 130px;
+    }
+                    
+    h1{
+        text-align: center; 
+        font-size: 400%;
+        text-shadow: 5px 5px black;      
+    }
+                    
+    header::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    #google_translate_element{
+        padding-top: 30px;
+        float: right;
+    }
+                    
+    #menuNav{
+        margin-top: -20px;
+        width:100%;  
+        position: fixed;
+        background-color: black; 
+    }
+                    
+    #navArea:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+        
+    #navArea ul{
+        list-style: none;
+        margin:0;
+    }
+        
+    #navArea > ul > li{
+        float: left;
+        position: relative;
+    }
+            
+    #navArea ul li a{
+        text-decoration: none;
+        padding:15px 20px;
+        display: block;
+        color:white;
+        font-size: 27px;
+    }
+            
+    #navArea ul li:hover a{
+        background-color: #28F5EF;
+    }
+            
+    #navArea ul ul{
+        position:absolute;
+        padding:0;
+        min-width: 160px;
+        display: none;
+        top: 90%;
+        left: 0;
+    }
+                
+    #navArea ul li:hover > ul{
+        display: block;
+    }
+                
+    #navArea ul ul li:hover a{
+        background-color: #FF3522;
+    }
+            
+    #navArea ul ul li{
+        position: relative;
+    }
+
+    .essai:hover,
+    .essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+                    
+    a{
+        font-size: 25px;
+        -webkit-text-stroke: 2px black;
+    }
+                
+    /*-------
+    Background blanc de certaines lettres
+    */
+                
+    span.fi{
+        background-color: white;
+        text-shadow: 0px 0px black;
+    }
+    
+    /*-------
+    Espace entre certaines lettres
+    */
+    
+    span.espace{
+        opacity: 0;
+    }
+    
+        
+    /*-------
+    En-tête et paragraphe
+    */
+        
+    h2{
+        font-size: 43px;
+        text-align: center;
+        padding-top: 220px;
+    }
+            
+    .paragraphe{
+        font-size: 23px;
+        color: white;
+        -webkit-text-stroke: 0px black;
+    }
+        
+    h3{
+        font-size: 30px;
+    }
+    
+    /*-------
+    Emplacement du titre texte
+    */
+    
+    .perso{
+        display: flex;
+    }
+    
+    /*-------
+    Couleur des cellules de la boîte information
+    */
+    
+    .info{
+        background-color: red;
+        border-radius: 10px;
+        border: solid black 2px;
+        text-align: center;
+        -webkit-text-stroke: 0px black; 
+    }
+    .info2{
+        background-color: black;
+        border-radius: 10px;
+        border: solid black 2px;
+        text-align: center;
+        -webkit-text-stroke: 0px black; 
+    }
+    
+    .left{
+        width: 40%;
+    }
+    
+    .phantom{
+        height: 575px;
+        margin: auto;
+        display: block;
+    }
+    
+    /*-------
+    Configuration boîte information
+    */
+    
+    .box{
+        color: white;
+        font-size: 23px;
+        display: grid;
+        width: 50%;
+        grid-template-columns: 220px 220px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .right{
+        width: 50%;
+    }
+    
+    /*-------
+    Configuration des bouttons
+    */
+        
+    .btn{
+        margin-top: 20px;
+        margin-left: 190px;
+        cursor: pointer;
+    }
+    
+    .btn:hover{
+        background:#28F5EF ;
+    }
+    
+    
+    /*-------
+    PERSONA
+    */
+    
+    .necronomicon{
+        margin: auto;
+        width: 600px;
+        display: block;
+    }
+    
+    /*-------
+    Vidéo d'introduction
+    */
+    
+    .navi{
+        width: 700px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #demo{
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        text-shadow: none;
+    }
+    
+    }

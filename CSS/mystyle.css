@@ -1,0 +1,513 @@
+/*-----------Écran pour téléphone------------*/
+@media screen and (max-width: 600px){
+body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+
+/*-------
+Configuration du menu de navigation pour téléphone
+*/
+
+.logo{
+    display: none;
+}
+
+h1{
+    text-align: center; 
+    font-size: 190%;
+    text-shadow: 5px 5px black;   
+}
+
+#google_translate_element{
+    float: left;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#menuNav{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+}
+
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+
+#navArea ul li a{
+    text-decoration: none;
+    padding:10px 15px;
+    display: flex;
+    color:white;
+    font-size: 21px;
+}
+
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+
+#navArea ul li:hover > ul{
+    display: block;
+}
+
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+}
+
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+
+a{
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Paramètres du texte pour information basique du jeu pour téléphone
+*/
+
+h2{
+    font-size: 23px;
+}
+
+p{
+    font-size: 21px;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+Paramètres du texte pour information complémentaire du jeu pour téléphone
+*/
+
+h3{
+    text-align: center;
+    font-size: 23px;
+}
+
+#left li span{
+    color: #FFD625;
+    font-size: 23px;
+}
+
+#left h2{
+    text-align: center;
+}
+
+#right{
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+/*-------
+Background blanc au lettre noir pour téléphone
+*/
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Image du cast principale pour téléphone
+*/
+
+.cast{
+    width: 100%;
+    height: auto;
+}
+
+.projet{
+    text-align: center;
+}
+
+.projet a{
+    color:white;    
+}
+
+
+#demo{
+    text-align: center;
+}
+
+
+} 
+
+/*---------Écran pour tablette----------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1200px){
+ body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+
+/*-------
+Configuration du menu de navigation pour tablette
+*/
+
+.logo{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+h1{
+    text-align: center; 
+    font-size: 320%;
+    text-shadow: 5px 5px black;       
+}
+
+#google_translate_element{
+    float: right;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#menuNav{
+    width:95%;
+    margin: 0 auto;
+}
+
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+
+#navArea ul li a{
+    text-decoration: none;
+    padding:15px 20px;
+    display: block;
+    color:white;
+    font-size: 22px;
+}
+
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+
+#navArea ul li:hover > ul{
+    display: block;
+}
+
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+}
+
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+
+a{
+    font-size: 20px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Paramètres du texte pour information basique du jeu pour tablette
+*/
+
+h2{
+    font-size: 25px;
+}
+
+p{
+    font-size: 22px;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+Background blanc au lettre noir
+*/
+
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Paramètres du texte pour information complémentaire du jeu pour tablette
+*/
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+   
+#left li span{
+    color: #FFD625;
+    font-size: 21px;
+}
+
+#left h2{
+    text-align: center;
+}
+
+#right{
+    flex: 1;
+    margin-left: 65px;
+}
+
+/*-------
+Image du cast principale tablette
+*/
+
+.cast{
+    height: auto;
+    width: 100%;
+}
+
+.projet{
+    text-align: center;
+}
+
+.projet a{
+    color:white;    
+}
+
+
+#demo{
+    text-align: center;
+}
+
+
+    
+    }
+/*-----------Écran pour pc-------------*/
+
+@media only screen and (min-width: 1200px){
+body {
+    background-image: repeating-linear-gradient(to left,#FF3522,#000000) ;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+
+/*-------
+Configuration du menu de navigation 
+*/
+
+.logo{
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+
+.logo:hover{
+    background: url("../Images/card.jpg") no-repeat;
+}
+
+h1{
+    text-align: center; 
+    font-size: 400%;
+    text-shadow: 5px 5px black;   
+}
+
+#google_translate_element{
+    float: right;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#menuNav{
+    width:95%;
+    margin: 0 auto;
+}
+
+#navArea:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#navArea ul{
+    list-style: none;
+    margin:0;
+}
+#navArea > ul > li{
+    float: left;
+    position: relative;
+}
+#navArea ul li a{
+    text-decoration: none;
+    padding:15px 20px;
+    display: block;
+    color:white;
+    font-size: 27px;
+}
+#navArea ul li:hover a{
+    background-color: #28F5EF;
+}
+#navArea ul ul{
+    position:absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 90%;
+    left: 0;
+}
+#navArea ul li:hover > ul{
+    display: block;
+}
+#navArea ul ul li:hover a{
+    background-color: #FF3522;
+}
+#navArea ul ul li{
+    position: relative;
+}
+
+.essai:hover,
+.essai:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.4em);
+}
+
+a{
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+}
+
+/*-------
+Paramètres du texte pour information basique du jeu 
+*/
+
+h2{
+    font-size: 37px;
+}
+
+p{
+    font-size: 25px;
+    -webkit-text-stroke: 0px black;
+}
+
+/*-------
+Paramètres du texte pour information complémentaire du jeu 
+*/
+
+h3{
+    text-align: center;
+    font-size: 37px;
+}
+
+#menu{
+    display: flex;
+}
+
+#left{
+    flex-direction: column;
+    width: 35%;
+}
+#left li span{
+    color: #FFD625;
+    font-size: 23px;
+}
+#left h2{
+    text-align: center;
+}
+#right{
+    flex: 1;
+    margin-left: 165px;
+}
+
+/*-------
+Background blanc au lettre noir 
+*/
+
+span.fi{
+    background-color: white;
+    text-shadow: 0px 0px black;
+}
+
+/*-------
+Image du cast principale 
+*/
+
+.cast{
+    margin-top: 30px;
+    margin: auto;
+    height: 570px;
+}
+
+#demo{
+    text-align: center;
+}
+
+.projet{
+    text-align: center;
+}
+
+.projet a{
+    color:white;    
+}
+
+}
